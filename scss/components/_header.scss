@@ -1,6 +1,15 @@
 header{
+    background-color: yellow;
     nav{
-        
+        div{
+            a{
+                img{
+                    width: 200px; height: 80px;
+                }
+            }
+            .navbar-toggler{
+                border: 2px solid blue;
+            }
+        }
     }
-    border: 1px solid black;
 }
