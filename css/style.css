@@ -1,18 +1,35 @@
 header {
   border: 1px solid black; }
 
+footer {
+  padding: 5px;
+  border: 2px solid #61614a;
+  background-color: yellow; }
+  footer ul li {
+    display: flex;
+    justify-content: center; }
+
 .centro {
   display: grid;
   grid-template-areas: "carrusel" "servicios" "info"; }
   .centro .carrusel {
-    grid-area: carrusel;
-    border: 3px solid blue;
-    background-color: #313131;
+    position: relative;
     width: 100%;
-    height: 301px; }
-    .centro .carrusel div .carousel-inner .carousel-item img {
+    height: 50vh;
+    background-image: url(../img/pexels-gerd-altmann-21694.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .1s ease-in-out;
+    animation: banner 28s infinite linear; }
+    .centro .carrusel .banner-content {
       width: 100%;
-      height: 300px; }
+      height: 100%;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.498);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
   .centro .servicios {
     background-color: #2a2a2a; }
     .centro .servicios .titulo-servicios p {
@@ -24,28 +41,52 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around; }
-      .centro .servicios .logos-servicios .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid yellow;
-        border-radius: 90%;
-        margin: 25px;
-        width: 110px;
-        height: 110px; }
-        .centro .servicios .logos-servicios .logo img {
-          margin-left: 10 px;
-          width: 50px;
-          height: 50px; }
-        .centro .servicios .logos-servicios .logo p {
-          color: yellow;
-          text-align: center; }
+      .centro .servicios .logos-servicios .btn-servicio {
+        text-decoration: none; }
+        .centro .servicios .logos-servicios .btn-servicio .logo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid yellow;
+          border-radius: 90%;
+          margin: 25px;
+          width: 110px;
+          height: 110px; }
+          .centro .servicios .logos-servicios .btn-servicio .logo img {
+            margin-left: 10 px;
+            width: 50px;
+            height: 50px; }
+          .centro .servicios .logos-servicios .btn-servicio .logo p {
+            color: yellow;
+            text-align: center; }
   .centro .info {
+    border: 2px solid #313131;
     grid-area: info;
-    border: 3px solid blue;
     background-color: #313131; }
-    .centro .info p {
-      font-style: oblique;
+    .centro .info .titulo-info p {
+      font-size: 30px;
+      color: yellow;
+      text-align: center; }
+    .centro .info .cuerpo-info p {
       font-size: 20px;
-      color: yellow; }
+      color: #fff;
+      text-align: center; }
+
+@keyframes banner {
+  0% {
+    background-image: url(../img/pexels-gerd-altmann-21694.jpg); }
+  25% {
+    background-image: url(../img/pexels-gerd-altmann-21694.jpg); }
+  26% {
+    background-image: url(../img/pexels-andrea-piacquadio-3806252.jpg); }
+  50% {
+    background-image: url(../img/pexels-andrea-piacquadio-3806252.jpg); }
+  51% {
+    background-image: url(../img/banner-2.jpg); }
+  75% {
+    background-image: url(../img/banner-2.jpg); }
+  76% {
+    background-image: url(../img/banner-1.jpg); }
+  100% {
+    background-image: url(../img/banner-1.jpg); } }
