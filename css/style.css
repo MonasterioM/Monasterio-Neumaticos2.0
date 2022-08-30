@@ -13,10 +13,15 @@ footer {
   footer ul li {
     display: flex;
     justify-content: center; }
+    footer ul li p {
+      color: blue; }
+    footer ul li a img {
+      width: 50px;
+      height: 50px; }
 
 .centro {
   display: grid;
-  grid-template-areas: "carrusel" "servicios" "info"; }
+  grid-template-areas: "carrusel" "servicios" "ubicacion" "info"; }
   .centro .carrusel {
     position: relative;
     width: 100%;
@@ -36,7 +41,7 @@ footer {
       justify-content: center;
       align-items: center; }
   .centro .servicios {
-    background-color: #2a2a2a; }
+    background-color: #313131; }
     .centro .servicios .titulo-servicios p {
       font-family: 'Times New Roman', Times, serif;
       font-size: 30px;
@@ -65,6 +70,17 @@ footer {
           .centro .servicios .logos-servicios .btn-servicio .logo p {
             color: yellow;
             text-align: center; }
+  .centro .ubi {
+    grid-area: ubicacion;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .centro .ubi h3 {
+      color: yellow; }
+    .centro .ubi .ubi-google iframe {
+      width: 200px;
+      height: 300px; }
   .centro .info {
     border: 2px solid #313131;
     grid-area: info;
@@ -77,6 +93,12 @@ footer {
       font-size: 20px;
       color: #fff;
       text-align: center; }
+  .centro .wpp a .wpp-logo {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px; }
 
 @keyframes banner {
   0% {
