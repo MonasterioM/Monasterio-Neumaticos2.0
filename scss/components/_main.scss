@@ -23,13 +23,19 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            h1{
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
     .servicios{
-        background-color: rgb(49, 49, 49);
+        background-color: #343434;
         .titulo-servicios{
             p{
-                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
                 font-size: 30px;
                 text-align: center;
                 color: yellow;
@@ -66,16 +72,17 @@
     }
     .ubi{
         grid-area: ubicacion;
-        background-color: rgb(49, 49, 49);
+        background-color: #343434;
         display: flex;
         flex-direction: column;
         align-items: center;
         h3{
+            font-size: 30px;
             color: yellow;
         }
         .ubi-google{
             iframe{
-                width: 200px;
+                width: 275px;
                 height: 300px;
             }
         }
@@ -83,7 +90,7 @@
     .info{
         border: 2px solid  rgb(49, 49, 49);
         grid-area: info;
-        background-color: rgb(49, 49, 49);
+        background-color: #343434;
         .titulo-info{
             p{
             font-size: 30px;
@@ -96,6 +103,7 @@
                 font-size: 20px;
                 color: #fff;
                 text-align: center;
+                font-style: oblique;
             }
         }    
     }
@@ -103,8 +111,8 @@
         a{
             .wpp-logo{
                 position: fixed;
-                bottom: 10px;
-                right: 20px;
+                bottom: 50px;
+                left: 20px;
                 width: 50px;
                 height: 50px;
             }

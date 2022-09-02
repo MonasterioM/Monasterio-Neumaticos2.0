@@ -3,6 +3,9 @@ footer{
     border: 2px solid rgb(97, 97, 74);
     background-color: yellow;
     ul{
+        display: flex;
+        justify-content: space-around;
+
         li{
             display: flex;
             justify-content: center;

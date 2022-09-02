@@ -10,14 +10,17 @@ footer {
   padding: 5px;
   border: 2px solid #61614a;
   background-color: yellow; }
-  footer ul li {
+  footer ul {
     display: flex;
-    justify-content: center; }
-    footer ul li p {
-      color: blue; }
-    footer ul li a img {
-      width: 50px;
-      height: 50px; }
+    justify-content: space-around; }
+    footer ul li {
+      display: flex;
+      justify-content: center; }
+      footer ul li p {
+        color: blue; }
+      footer ul li a img {
+        width: 50px;
+        height: 50px; }
 
 .centro {
   display: grid;
@@ -40,10 +43,15 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      .centro .carrusel .banner-content h1 {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
   .centro .servicios {
-    background-color: #313131; }
+    background-color: #343434; }
     .centro .servicios .titulo-servicios p {
-      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
       font-size: 30px;
       text-align: center;
       color: yellow; }
@@ -72,19 +80,20 @@ footer {
             text-align: center; }
   .centro .ubi {
     grid-area: ubicacion;
-    background-color: #313131;
+    background-color: #343434;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .centro .ubi h3 {
+      font-size: 30px;
       color: yellow; }
     .centro .ubi .ubi-google iframe {
-      width: 200px;
+      width: 275px;
       height: 300px; }
   .centro .info {
     border: 2px solid #313131;
     grid-area: info;
-    background-color: #313131; }
+    background-color: #343434; }
     .centro .info .titulo-info p {
       font-size: 30px;
       color: yellow;
@@ -92,11 +101,12 @@ footer {
     .centro .info .cuerpo-info p {
       font-size: 20px;
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      font-style: oblique; }
   .centro .wpp a .wpp-logo {
     position: fixed;
-    bottom: 10px;
-    right: 20px;
+    bottom: 50px;
+    left: 20px;
     width: 50px;
     height: 50px; }
 
