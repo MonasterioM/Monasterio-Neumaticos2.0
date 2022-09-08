@@ -98,11 +98,14 @@ footer {
       font-size: 30px;
       color: yellow;
       text-align: center; }
-    .centro .info .cuerpo-info p {
-      font-size: 20px;
-      color: #fff;
-      text-align: center;
-      font-style: oblique; }
+    .centro .info .cuerpo-info .card-info {
+      border: 1px solid white;
+      margin-bottom: 20px; }
+      .centro .info .cuerpo-info .card-info p {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        font-style: oblique; }
   .centro .wpp a .wpp-logo {
     position: fixed;
     bottom: 50px;
